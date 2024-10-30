@@ -16,7 +16,7 @@ function handleGenerateQrCode(){
       <h1>QR CODE GENERATOR</h1>
       <div>
         <input onChange={(e)=> setInput(e.target.value)} type="text" name="qr-code" placeholder="Enter your value here" />
-        <button disabled={input && input.trim() !== ''} onClick={handleGenerateQrCode}>Generate</button>
+        <button disabled={input && input.trim() !== '' ? false : true} onClick={handleGenerateQrCode}>Generate</button>
       </div>
       <div>
         <QRCode id="qr-code-value" value="" />
