@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import QRCodeGenerator from "./qr-code-gen/index.jsx";
 
 function App() {
   return (
     <div className="App">
- 
+      <QRCodeGenerator />
     </div>
   );
 }
